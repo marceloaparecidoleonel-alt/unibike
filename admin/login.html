@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — UNIBIKE Admin</title>
+    <script>const t=localStorage.getItem('unibike-theme')||'dark';if(t==='light')document.documentElement.setAttribute('data-theme','light');else document.documentElement.removeAttribute('data-theme');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="adm-login-page">
+    <main class="adm-login-card" aria-labelledby="loginTitle">
+        <div class="adm-login-brand">
+            <div class="adm-login-logo" aria-hidden="true">
+                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4">
+                    <path d="M18 44a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm28 0a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z"/>
+                    <path d="M18 34h10l7-14h7l-5 14h9M28 34l-8-14h8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div>
+                <div class="adm-brand-name">UNI<span>BIKE</span></div>
+                <div class="adm-brand-badge">Admin Panel</div>
+            </div>
+        </div>
+
+        <h1 class="adm-login-title" id="loginTitle">Acesso administrativo</h1>
+        <p class="adm-login-subtitle">Entre com suas credenciais para acessar o painel.</p>
+
+        <!-- ── Formulário de login integrado com Firebase Authentication ── -->
+        <form class="adm-login-form" id="loginForm" novalidate>
+            <div class="adm-login-field">
+                <label for="adminEmail">E-mail</label>
+                <input id="adminEmail" name="email" type="email" autocomplete="email" placeholder="admin@unibike.com.br" required>
+            </div>
+
+            <div class="adm-login-field">
+                <label for="adminPassword">Senha</label>
+                <input id="adminPassword" name="password" type="password" autocomplete="current-password" placeholder="Digite sua senha" required>
+            </div>
+
+            <!-- Área de exibição de erros de autenticação Firebase -->
+            <p class="adm-login-error" id="loginError" role="alert" aria-live="polite"></p>
+
+            <!-- Botão de envio — dispara fazerLogin() do auth.js -->
+            <button class="adm-login-submit" type="submit" id="loginBtn">Entrar</button>
+        </form>
+
+        <a class="adm-login-back" href="../index.html">Voltar ao site</a>
+    </main>
+    <!-- ── Módulo de autenticação Firebase ── -->
+    <script type="module">
+        import { fazerLogin } from "./auth.js";
+
+        const form     = document.getElementById("loginForm");
+        const btnLogin = document.getElementById("loginBtn");
+        const errEl    = document.getElementById("loginError");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            errEl.textContent = "";
+
+            const email = document.getElementById("adminEmail").value.trim();
+            const senha = document.getElementById("adminPassword").value;
+
+            // Desabilita botão durante a requisição
+            btnLogin.disabled    = true;
+            btnLogin.textContent = "Entrando...";
+
+            // ── Chama Firebase Authentication via auth.js ──
+            const erro = await fazerLogin(email, senha);
+
+            if (erro) {
+                errEl.textContent    = erro;
+                btnLogin.disabled    = false;
+                btnLogin.textContent = "Entrar";
+            }
+            // Se login OK, fazerLogin() já redireciona para dashboard.html
+        });
+    </script>
+</body>
+</html>

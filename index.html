@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIBIKE | Bicicletas, Peças e Oficina em Ribeirão Claro - PR</title>
+    <meta name="description" content="UNIBIKE — catálogo de bicicletas, peças e acessórios em Ribeirão Claro - PR. Bicicletas novas, seminovas e usadas. Oficina especializada. Fale pelo WhatsApp.">
+    <meta name="keywords" content="UNIBIKE, bicicleta Ribeirão Claro, comprar bicicleta PR, bicicleta MTB, bicicleta infantil, peças de bicicleta, oficina de bicicleta Ribeirão Claro">
+    <meta name="author" content="UNIBIKE">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta property="og:type" content="business.business">
+    <meta property="og:title" content="UNIBIKE | Bicicletas e Peças em Ribeirão Claro - PR">
+    <meta property="og:description" content="Catálogo de bicicletas novas, seminovas e usadas. Peças, acessórios e oficina especializada em Ribeirão Claro - PR.">
+    <meta property="og:site_name" content="UNIBIKE">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary">
+    <link rel="canonical" href="https://marceloaparecidoleonel-alt.github.io/unibike/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function() {
+            const saved = localStorage.getItem('unibike-theme');
+            const isDark = saved === 'dark';
+            if (isDark) document.documentElement.setAttribute('data-theme', 'dark');
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', isDark ? '#121212' : '#FFFFFF');
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BikeStore",
+        "name": "UNIBIKE",
+        "founder": { "@type": "Person", "name": "Juarez Furquim Leonel" },
+        "telephone": "+554396152886",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Dr. Xavier da Silva",
+            "addressLocality": "Ribeirão Claro",
+            "addressRegion": "PR",
+            "addressCountry": "BR"
+        },
+        "areaServed": { "@type": "City", "name": "Ribeirão Claro" },
+        "priceRange": "$$",
+        "description": "Bicicletaria, catálogo de bicicletas e oficina especializada no Centro de Ribeirão Claro, Paraná.",
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Bicicletaria%20UNIBIKE%20Ribeir%C3%A3o%20Claro%20PR"
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+    <div class="page-loader" aria-hidden="true">
+        <div class="loader-mark">UNIBIKE</div>
+    </div>
+
+    <!-- HEADER LOJA -->
+    <header class="store-header" id="siteHeader">
+        <div class="store-header-top">
+            <div class="container store-header-inner">
+                <!-- Logo -->
+                <a class="brand" href="index.html" aria-label="UNIBIKE - início">
+                    <span class="brand-text">UNI<span>BIKE</span></span>
+                </a>
+
+                <!-- Campo de busca -->
+                <form class="store-search" id="storeSearchForm" role="search" aria-label="Buscar produtos">
+                    <input id="storeSearchInput" type="search" placeholder="Buscar bicicletas, peças, acessórios..." autocomplete="off" aria-label="Buscar produtos">
+                    <button type="submit" aria-label="Buscar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/>
+                            <path d="M21 21l-4.35-4.35" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Ações -->
+                <div class="store-header-actions">
+                    <a class="store-whatsapp-btn whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M12.04 2A10 10 0 0 0 4.1 17.3L2.7 21.6l4.44-1.16A10 10 0 1 0 12.04 2Zm0 1.67a8.33 8.33 0 0 1 7.02 12.82 8.3 8.3 0 0 1-11.16 2.65l-.38-.22-2.77.63.65-2.69-.26-.4A8.33 8.33 0 0 1 12.04 3.67Zm-3.38 4.4c-.2 0-.53.08-.8.37-.28.3-1.06 1.04-1.06 2.53s1.08 2.93 1.24 3.13c.15.2 2.1 3.38 5.19 4.6 2.56 1.01 3.08.8 3.64.75.56-.05 1.8-.74 2.06-1.45.26-.7.26-1.3.18-1.44-.08-.13-.29-.2-.61-.36-.32-.15-1.8-.89-2.09-1-.28-.1-.48-.16-.69.16-.2.32-.79.99-.97 1.19-.18.2-.35.22-.67.08-.32-.15-1.33-.5-2.54-1.57-.94-.84-1.57-1.87-1.76-2.19-.18-.32-.02-.5.14-.66.14-.14.32-.37.47-.56.16-.2.21-.33.32-.55.1-.21.05-.4-.03-.56-.08-.16-.69-1.67-.95-2.28-.24-.6-.5-.52-.69-.52h-.58Z" fill="currentColor"/>
+                        </svg>
+                        <span>WhatsApp</span>
+                    </a>
+                    <button class="theme-toggle" type="button" aria-label="Ativar tema escuro" title="Ativar tema escuro">
+                        <svg class="theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="storeNav">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Nav de categorias -->
+        <nav class="store-nav" aria-label="Categorias">
+            <div class="container">
+                <ul class="store-nav-list" id="storeNav">
+                    <li><a href="catalogo.html" class="store-nav-link" data-cat="todas">Todas</a></li>
+                    <li><a href="catalogo.html?cat=mtb" class="store-nav-link" data-cat="mtb">Mountain Bike</a></li>
+                    <li><a href="catalogo.html?cat=urbana" class="store-nav-link" data-cat="urbana">Urbana</a></li>
+                    <li><a href="catalogo.html?cat=infantil" class="store-nav-link" data-cat="infantil">Infantil</a></li>
+                    <li><a href="catalogo.html?cat=pecas" class="store-nav-link" data-cat="pecas">Peças</a></li>
+                    <li><a href="catalogo.html?cat=acessorios" class="store-nav-link" data-cat="acessorios">Acessórios</a></li>
+                    <li><a href="catalogo.html?cat=skates" class="store-nav-link store-nav-link--skates" data-cat="skates">Skates</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="conteudo">
+
+        <!-- CATEGORIAS VISUAIS -->
+        <section class="store-section" id="categorias" aria-labelledby="catTitle">
+            <div class="container">
+                <div class="store-section-header">
+                    <h2 id="catTitle">Categorias</h2>
+                    <a class="store-see-all" href="catalogo.html">Ver tudo</a>
+                </div>
+                <div class="category-grid">
+                    <a class="category-card" href="catalogo.html?cat=mtb" aria-label="Mountain Bike">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M14 34a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm20 0a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M14 26h10l7-12h6l-5 12h6M24 26l-7-12h7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Mountain Bike</span>
+                    </a>
+                    <a class="category-card" href="catalogo.html?cat=urbana" aria-label="Urbana">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M10 30a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm28 0a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M10 22h28M24 14v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                                <circle cx="24" cy="22" r="3" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <span>Urbana</span>
+                    </a>
+                    <a class="category-card" href="catalogo.html?cat=infantil" aria-label="Infantil">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M12 32a7 7 0 1 1 0-14 7 7 0 0 1 0 14Zm24 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M12 25h9l6-11h5l-4 11h6M21 25l-6-11h6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="24" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span>Infantil</span>
+                    </a>
+                    <a class="category-card" href="catalogo.html?cat=pecas" aria-label="Peças">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M16 10h4v4a4 4 0 1 0 8 0v-4h4l2 4-2 4h-4v4a4 4 0 1 0-8 0v-4h-4l-2-4 2-4Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path d="M10 26h28M14 32h20M18 38h12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Peças</span>
+                    </a>
+                    <a class="category-card" href="catalogo.html?cat=acessorios" aria-label="Acessórios">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path d="M24 8c-6 0-11 4-11 10 0 4 2 7 5 9l2 13h8l2-13c3-2 5-5 5-9 0-6-5-10-11-10Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                                <path d="M20 30h8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span>Acessórios</span>
+                    </a>
+                    <a class="category-card" href="catalogo.html?cat=skates" aria-label="Skates">
+                        <div class="category-card-icon">
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <rect x="6" y="30" width="36" height="6" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                <circle cx="14" cy="36" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                <circle cx="34" cy="36" r="4" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                                <path d="M10 30 18 12h12l8 18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>Skates</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BANNER COMPACTO -->
+        <section class="store-banner" aria-label="Banner principal">
+            <div class="store-banner-bg" aria-hidden="true"></div>
+            <div class="container store-banner-content">
+                <div class="store-banner-text">
+                    <p class="store-banner-eyebrow">Bicicletaria em Ribeirão Claro - PR</p>
+                    <h1 class="store-banner-title">Bicicletas, Peças<br>e Skates</h1>
+                    <p class="store-banner-sub">Novas, seminovas e usadas. Atendimento direto pelo WhatsApp.</p>
+                    <div class="store-banner-actions">
+                        <a class="btn btn-primary" href="catalogo.html">Ver Catálogo</a>
+                        <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUTOS EM DESTAQUE -->
+        <section class="store-section" id="destaques" aria-labelledby="featTitle">
+            <div class="container">
+                <div class="store-section-header">
+                    <h2 id="featTitle">Destaques</h2>
+                    <a class="store-see-all" href="catalogo.html">Ver catálogo completo</a>
+                </div>
+                <div class="product-grid" id="featuredGrid"></div>
+            </div>
+        </section>
+
+        <!-- CONDIÇÕES -->
+        <section class="store-section" aria-labelledby="condTitle">
+            <div class="container">
+                <div class="store-section-header">
+                    <h2 id="condTitle">Comprar por condição</h2>
+                </div>
+                <div class="condition-strip">
+                    <a class="condition-card condition-nova" href="catalogo.html?cond=nova">
+                        <strong>Novas</strong>
+                        <span>Bicicletas e peças novas em estoque</span>
+                    </a>
+                    <a class="condition-card condition-seminova" href="catalogo.html?cond=seminova">
+                        <strong>Seminovas</strong>
+                        <span>Ótimo estado, valor reduzido</span>
+                    </a>
+                    <a class="condition-card condition-usada" href="catalogo.html?cond=usada">
+                        <strong>Usadas</strong>
+                        <span>Revisadas na oficina UNIBIKE</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS (STRIP COMPACTO) -->
+        <section class="store-section services-strip" aria-labelledby="servTitle">
+            <div class="container">
+                <div class="store-section-header">
+                    <h2 id="servTitle">Skates</h2>
+                    <a class="store-see-all" href="catalogo.html?cat=skates">Ver todos os serviços</a>
+                </div>
+                <div class="services-strip-grid">
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M8 22 21 9a5 5 0 0 1 6 6L14 28H8V22Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M22 11 26 15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        <span>Revisão Completa</span>
+                    </div>
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M18 6v3M18 27v3M6 18h3M27 18h3M9.5 9.5l2 2M24.5 24.5l2 2M24.5 9.5l-2 2M9.5 24.5l2-2" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                        <span>Regulagem de Freios</span>
+                    </div>
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M8 12h14a6 6 0 0 1 0 12H8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 18h8M27 13l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Regulagem de Câmbio</span>
+                    </div>
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M8 26 26 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M12 10h-4v4M24 26h4v-4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Troca de Peças</span>
+                    </div>
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M10 26a8 8 0 1 1 0-16 8 8 0 0 1 0 16Zm16 0a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M10 18h10l7-8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Montagem</span>
+                    </div>
+                    <div class="service-strip-card">
+                        <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="10" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M18 11v7l4 4" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <span>Orçamento rápido</span>
+                    </div>
+                </div>
+                <div class="services-strip-cta">
+                    <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCALIZAÇÃO -->
+        <section class="store-section location-strip" id="localizacao" aria-labelledby="locTitle">
+            <div class="container location-strip-layout">
+                <div class="location-strip-info">
+                    <h2 id="locTitle">Onde estamos</h2>
+                    <p class="location-strip-address">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6Zm0 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" fill="currentColor"/></svg>
+                        Rua Dr. Xavier da Silva, Centro<br>Ribeirão Claro - PR
+                    </p>
+                    <div class="location-strip-actions">
+                        <a class="btn btn-whatsapp whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+                        <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Bicicletaria%20UNIBIKE%20Ribeir%C3%A3o%20Claro%20PR" target="_blank" rel="noopener">Ver no Maps</a>
+                    </div>
+                </div>
+                <div class="location-strip-map">
+                    <iframe title="Mapa da UNIBIKE em Ribeirão Claro - PR" src="https://www.google.com/maps?q=Bicicletaria+UNIBIKE%2C+Ribeir%C3%A3o+Claro+PR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FLOATING WHATSAPP -->
+    <a class="floating-whatsapp whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener" aria-label="Falar com a UNIBIKE pelo WhatsApp">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16.04 3.2A12.7 12.7 0 0 0 5.13 22.4L3.6 28.8l6.56-1.5A12.7 12.7 0 1 0 16.04 3.2Zm0 2.34a10.36 10.36 0 0 1 8.72 15.96 10.33 10.33 0 0 1-13.88 3.3l-.48-.28-3.44.78.8-3.34-.32-.5A10.36 10.36 0 0 1 16.04 5.54Zm-4.2 5.48c-.25 0-.66.1-1 .46-.35.38-1.32 1.3-1.32 3.14s1.35 3.64 1.54 3.9c.19.25 2.62 4.2 6.46 5.72 3.18 1.26 3.84 1 4.52.94.7-.06 2.24-.92 2.56-1.8.32-.88.32-1.64.22-1.8-.1-.16-.36-.25-.76-.45-.4-.2-2.24-1.1-2.6-1.24-.35-.13-.6-.2-.86.2-.25.4-.98 1.23-1.2 1.48-.22.26-.44.29-.84.1-.4-.2-1.66-.62-3.16-1.96-1.17-1.04-1.96-2.33-2.2-2.72-.22-.4-.02-.62.18-.82.18-.18.4-.48.6-.72.2-.24.26-.4.4-.68.13-.26.06-.5-.04-.7-.1-.2-.86-2.08-1.18-2.84-.3-.74-.62-.64-.86-.65h-.72Z"/>
+        </svg>
+        <span>WhatsApp</span>
+    </a>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a class="brand footer-brand" href="index.html" aria-label="UNIBIKE - início">
+                    <span class="brand-symbol">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M18 44a10 10 0 1 1 0-20 10 10 0 0 1 0 20Zm28 0a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="none" stroke="currentColor" stroke-width="4"/>
+                            <path d="M18 34h10l7-14h7l-5 14h9M28 34l-8-14h8" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <span class="brand-text">UNI<span>BIKE</span></span>
+                </a>
+                <p>Bicicletaria UNIBIKE<br>Ribeirão Claro - PR</p>
+                <p class="footer-owner">Juarez Furquim Leonel</p>
+            </div>
+            <div>
+                <h3>Catálogo</h3>
+                <ul>
+                    <li><a href="catalogo.html">Todos os produtos</a></li>
+                    <li><a href="catalogo.html?cat=mtb">Mountain Bike</a></li>
+                    <li><a href="catalogo.html?cat=urbana">Urbana</a></li>
+                    <li><a href="catalogo.html?cat=infantil">Infantil</a></li>
+                    <li><a href="catalogo.html?cat=pecas">Peças</a></li>
+                    <li><a href="catalogo.html?cat=acessorios">Acessórios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Informações</h3>
+                <ul>
+                    <li><a href="catalogo.html?cat=skates">Skates</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="https://wa.me/554396152886" class="whatsapp-link" target="_blank" rel="noopener">WhatsApp</a></li>
+                    <li><a href="admin/login.html">Login</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <div class="footer-contact">
+                    <a class="footer-contact-link whatsapp-link" href="https://wa.me/554396152886" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2A8 8 0 0 0 3.6 14.2L2.5 18l3.9-1a8 8 0 1 0 3.6.86A8 8 0 0 0 10 2Zm0 1.4a6.6 6.6 0 1 1 0 13.2 6.6 6.6 0 0 1 0-13.2Zm-2.5 3c-.16 0-.43.06-.65.3-.22.24-.85.83-.85 2.02s.87 2.35 1 2.5c.12.16 1.68 2.7 4.14 3.65 2.03.8 2.44.64 2.88.6.44-.04 1.43-.59 1.64-1.16.2-.57.2-1.05.14-1.15-.06-.1-.23-.16-.48-.28-.26-.12-1.44-.71-1.66-.8-.22-.08-.38-.12-.55.12-.17.25-.63.8-.77.96-.14.16-.28.18-.54.06-.25-.12-1.06-.4-2.02-1.26-.74-.67-1.25-1.5-1.4-1.75-.14-.25-.01-.4.1-.53.12-.12.26-.3.38-.45.13-.15.17-.26.25-.44.08-.17.04-.32-.03-.44-.07-.13-.55-1.34-.76-1.83-.19-.47-.4-.41-.55-.42h-.46Z" fill="currentColor"/></svg>
+                        +55 43 9615-2886
+                    </a>
+                    <a class="footer-contact-link" href="https://www.google.com/maps/search/?api=1&query=Bicicletaria%20UNIBIKE%20Ribeir%C3%A3o%20Claro%20PR" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6Zm0 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" fill="currentColor"/></svg>
+                        Rua Dr. Xavier da Silva, Centro
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> UNIBIKE. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script type="module" src="firestore-produtos.js"></script>
+</body>
+</html>
